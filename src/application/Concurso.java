@@ -48,14 +48,14 @@ public class Concurso {
 
 			if (media >= 70) {
 				quantidadeAprovados++;
-				somaMediasAprovados += media;}
+				somaMediasAprovados += media;
+			}
 
-				if (media > maiorMedia) {
-					maiorMedia = media;
-					pessoaMaiorMedia = pessoas[i].getNome();
-				}
-											
-			
+			if (media > maiorMedia) {
+				maiorMedia = media;
+				pessoaMaiorMedia = pessoas[i].getNome();
+			}
+
 		}
 
 		System.out.println("\nPESSOAS APROVADAS:");
@@ -74,9 +74,9 @@ public class Concurso {
 		if (quantidadeAprovados > 0) {
 			System.out.println("Maior média: " + pessoaMaiorMedia);
 			System.out.printf("Nota média dos aprovados: %.2f\n", somaMediasAprovados / quantidadeAprovados);
-		} 
-		if ( quantidadeAprovados <= 0) {
-			
+		}
+		if (quantidadeAprovados <= 0) {
+
 			System.out.println("Maior média: " + pessoaMaiorMedia);
 			System.out.println("Não há candidatos aprovados.");
 		}
